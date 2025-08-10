@@ -34,3 +34,19 @@ feeds:
       url:
         selector: "span.titleline a"
         extractor: "href"
+feeds:
+  spicy4tuna_newsletter:
+    channel:
+      url: https://newsletter.spicy4tuna.com/
+      title: SPICY4TUNA Newsletter
+      description: "Resumen de los últimos episodios y contenido extra"
+      ttl: 120
+    selectors:
+      items:
+        selector: "#### Publicaciones ~ ul > li" # Lista de entradas
+      title:
+        selector: "a" # El texto del enlace
+      url:
+        selector: "a"
+        extractor: "href"
+      # Opcional: fecha si estuviera visible
