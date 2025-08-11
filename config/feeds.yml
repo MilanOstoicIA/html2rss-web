@@ -50,3 +50,18 @@ feeds:
         selector: "a"
         extractor: "href"
       # Opcional: fecha si estuviera visible
+        spicy4tuna:
+    channel:
+      url: https://newsletter.spicy4tuna.com/
+      title: "SPICY4TUNA – Publicaciones"
+      ttl: 120
+    selectors:
+      items:
+        selector: "main ul li"     # lista de entradas
+      title:
+        selector: "a"              # texto del enlace
+      url:
+        selector: "a"
+        extractor: "href"          # saca el link
+
+
